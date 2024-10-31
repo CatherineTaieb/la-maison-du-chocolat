@@ -1,0 +1,27 @@
+
+@media (max-width: 390px) {
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Crete Round';
+    text-align: center;
+}
+    
+
+
+a,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+h1::after ,footer h2::after {
+    content: 'Chocolat.';
+    color: #ec2a85;
+}
+
