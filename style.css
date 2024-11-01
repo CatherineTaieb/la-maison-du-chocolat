@@ -1,11 +1,22 @@
+:root {
+    --font: #444444; /* texte du site */
+    --framboise: #E83B89; /* bouton */
+    --white: #FFFFFF; /* texte de bienvenue et h2 footer */
+    --lightgray: #ECECEC; /* fond de clubActus */
+    --lightblue: #BDECF6; /* bordures contactez nous */
+    --footer: #444444; /* fond footer */
+    --gray: #747474; /* texte footer */
+}
 
-@media (max-width: 390px) {
+
+
 
 body{
     margin:0;
-    padding: 0;
-    font-family: 'Crete Round';
+    font-family: 'Nunito';
     text-align: center;
+    color: var(--font);
+    font-size: 16px;
 }
     
 
@@ -15,13 +26,348 @@ a:link,
 a:visited,
 a:active {
     text-decoration: none;
-    color: black;
+    color: var(--font);
 }
 
 
+.logo{
+    font-family: 'Crete Round';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-h1::after ,footer h2::after {
+.logo::after {
     content: 'Chocolat.';
-    color: #ec2a85;
+    color: var(--framboise);
 }
 
+nav ul {    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    font-weight: 700;
+    font-size: 0.6rem;
+    margin-top: 20px;
+}
+
+.welcome{
+    background-image: url(images/main.jpg);
+    color: var(--white);
+    height: 40vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+
+h1, .welcome span{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.welcome span{
+    font-weight: bold;
+}
+
+
+
+.button{
+    color: var(--white);
+    background-color: var(--framboise);
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    border-radius:6px;
+    border: none;
+}
+
+
+
+/* CHARTE */
+
+.chart{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+
+.chart p{
+    margin: 25px;
+}
+
+.chart img{
+    width: 20%;
+}
+
+
+
+/* CLUB ACTUS */
+
+.clubActus{
+    background-color: var(--lightgray);
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.clubActus__club, .clubActus__actus{
+    display: flex;
+    background-color: var(--white);
+    border-radius: 15px;
+    margin: 50px 30px;
+    overflow: hidden;
+}
+
+
+.club__content, .actus__content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.clubActus h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.clubActus p{
+    border-top: 2px solid var(--lightgray);
+    padding-top: 20px;
+    margin : 0px 20px;
+    font-style: italic;
+}
+
+.clubActus .button, .clubActus .button{
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+
+
+.clubActus__club img, .clubActus__actus img {
+    object-fit: cover;
+    object-position: 75%;
+    min-width: 250px;
+}
+  
+
+/* CONTACT */
+
+.contact h2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contact p{
+    border-top: 1px solid var(--lightblue);
+    margin: 0px 20px;
+    padding-top: 20px;
+}
+
+
+form ul{
+    list-style: none;
+    padding: 0;
+}
+
+form label{
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+form input{
+    width: 150px;
+    padding: 5px 10px;
+    margin: 10px 0px 5px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    border-radius: 2px;
+}
+
+
+.contact .button{
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 0px;
+    margin: 8px auto;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: var(--footer);
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logo{
+    color: var(--white);
+    margin: 10px auto;
+}
+
+footer p{
+    color: var(--gray);
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+@media (min-width: 830px) {
+
+    header{
+        display: flex;
+    }
+
+    
+    header .logo{
+        font-size: 2rem;
+        margin: 10px 20px 30px 250px;
+
+    }
+
+    nav ul {    
+        font-size: 0.9rem;
+        margin: 40px 0 10px 50px;
+    }
+    
+
+    nav li{
+        padding: 0 10px;
+    }
+
+    .welcome {
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .welcome span{
+        display: block;
+        font-weight: bold;
+    }
+
+    
+    h1, .welcome span{
+        font-size: 2rem;
+    }
+
+    .welcome .button{
+        font-size: 16px;
+    }
+
+    .chart{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .chart h3{
+        margin-top: 40px;
+    }
+    
+    .chart img{
+    margin-top: 30px;
+    }
+
+    .chart p{
+        font-size: 0.8rem;
+    }
+
+    .chart__quality,.chart__ecology,.chart__fairtrade{
+        width: 300px;
+    }
+
+    .clubActus__club, .clubActus__actus {
+        max-width: 400px;
+    }
+
+    .clubActus__club img, .clubActus__actus img {
+        object-position: right;
+    }
+
+
+
+
+    .contact p{
+        margin: 0px 250px;
+    }
+
+    .contact ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .contact ul li {
+        margin-left: 20px;
+    }
+
+
+}
+
+@media (min-width: 500px) {
+
+    header .logo{
+        font-size: 2rem;
+    }
+
+    nav li{
+        font-size: 1rem;
+    }
+
+    .welcome {
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .welcome span{
+        display: block;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+    .chart img{
+        width: 10%;
+    }
+}
+
+
+
+
+@media (max-width: 350px) {
+
+body{
+    font-size: 0.6rem;
+}
+
+.clubActus__club img, .clubActus__actus img {
+    min-width: 80px;
+    max-width: 150px;
+    object-position: 68%;
+}
+
+}
