@@ -1,24 +1,31 @@
 :root {
-    --font: #444444; /* texte du site */
-    --framboise: #E83B89; /* bouton */
-    --white: #FFFFFF; /* texte de bienvenue et h2 footer */
-    --lightgray: #ECECEC; /* fond de clubActus */
-    --lightblue: #BDECF6; /* bordures contactez nous */
-    --footer: #444444; /* fond footer */
-    --gray: #747474; /* texte footer */
+    --font: #444444;
+    /* texte du site */
+    --framboise: #E83B89;
+    /* bouton */
+    --white: #FFFFFF;
+    /* texte de bienvenue et h2 footer */
+    --lightgray: #ECECEC;
+    /* fond de clubActus */
+    --lightblue: #BDECF6;
+    /* bordures contactez nous */
+    --footer: #444444;
+    /* fond footer */
+    --gray: #747474;
+    /* texte footer */
 }
 
 
 
 
-body{
-    margin:0;
+body {
+    margin: 0;
     font-family: 'Nunito';
     text-align: center;
     color: var(--font);
     font-size: 16px;
 }
-    
+
 
 
 a,
@@ -30,7 +37,7 @@ a:active {
 }
 
 
-.logo{
+.logo {
     font-family: 'Crete Round';
     font-size: 1.5rem;
     font-weight: bold;
@@ -41,7 +48,7 @@ a:active {
     color: var(--framboise);
 }
 
-nav ul {    
+nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -51,7 +58,7 @@ nav ul {
     margin-top: 20px;
 }
 
-.welcome{
+.welcome {
     background-image: url(images/main.jpg);
     color: var(--white);
     height: 40vh;
@@ -60,31 +67,32 @@ nav ul {
     flex-direction: column;
 }
 
-h1{
+h1 {
     margin-top: 50px;
 }
 
 
-h1, .welcome span{
+h1,
+.welcome span {
     display: inline-block;
     font-size: 1.3rem;
     font-weight: 400;
 }
 
-.welcome span{
+.welcome span {
     font-weight: bold;
 }
 
 
 
-.button{
+.button {
     color: var(--white);
     background-color: var(--framboise);
     width: 80px;
     display: block;
     margin: 20px auto;
     padding: 10px 15px;
-    border-radius:6px;
+    border-radius: 6px;
     border: none;
 }
 
@@ -92,18 +100,18 @@ h1, .welcome span{
 
 /* CHARTE */
 
-.chart{
+.chart {
     display: flex;
     flex-direction: column;
     margin-top: 3vh;
 }
 
 
-.chart p{
+.chart p {
     margin: 25px;
 }
 
-.chart img{
+.chart img {
     width: 20%;
 }
 
@@ -111,7 +119,7 @@ h1, .welcome span{
 
 /* CLUB ACTUS */
 
-.clubActus{
+.clubActus {
     background-color: var(--lightgray);
     padding: 1px;
     display: flex;
@@ -122,7 +130,8 @@ h1, .welcome span{
 
 
 
-.clubActus__club, .clubActus__actus{
+.clubActus__club,
+.clubActus__actus {
     display: flex;
     background-color: var(--white);
     border-radius: 15px;
@@ -131,25 +140,27 @@ h1, .welcome span{
 }
 
 
-.club__content, .actus__content{
+.club__content,
+.actus__content {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
 }
 
-.clubActus h3{
+.clubActus h3 {
     font-size: 20px;
     margin: 10px 0;
 }
 
-.clubActus p{
+.clubActus p {
     border-top: 2px solid var(--lightgray);
     padding-top: 20px;
-    margin : 0px 20px;
+    margin: 0px 20px;
     font-style: italic;
 }
 
-.clubActus .button, .clubActus .button{
+.clubActus .button,
+.clubActus .button {
     display: block;
     padding: 5px;
     margin: 10px auto;
@@ -157,40 +168,41 @@ h1, .welcome span{
 
 
 
-.clubActus__club img, .clubActus__actus img {
+.clubActus__club img,
+.clubActus__actus img {
     object-fit: cover;
     object-position: 75%;
     min-width: 250px;
 }
-  
+
 
 /* CONTACT */
 
-.contact h2{
+.contact h2 {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
-.contact p{
+.contact p {
     border-top: 1px solid var(--lightblue);
     margin: 0px 20px;
     padding-top: 20px;
 }
 
 
-form ul{
+form ul {
     list-style: none;
     padding: 0;
 }
 
-form label{
+form label {
     font-weight: bold;
     font-size: 12px;
 
 }
 
-form input{
+form input {
     width: 150px;
     padding: 5px 10px;
     margin: 10px 0px 5px 10px;
@@ -199,7 +211,7 @@ form input{
 }
 
 
-.contact .button{
+.contact .button {
     display: block;
     width: 35px;
     height: 35px;
@@ -211,18 +223,18 @@ form input{
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: var(--footer);
     display: flex;
     flex-direction: column;
 }
 
-footer .logo{
+footer .logo {
     color: var(--white);
     margin: 10px auto;
 }
 
-footer p{
+footer p {
     color: var(--gray);
     font-size: 0.7rem;
 }
@@ -234,24 +246,24 @@ footer p{
 
 @media (min-width: 830px) {
 
-    header{
+    header {
         display: flex;
     }
 
-    
-    header .logo{
+
+    header .logo {
         font-size: 2rem;
         margin: 10px 20px 30px 250px;
 
     }
 
-    nav ul {    
+    nav ul {
         font-size: 0.9rem;
         margin: 40px 0 10px 50px;
     }
-    
 
-    nav li{
+
+    nav li {
         padding: 0 10px;
     }
 
@@ -262,54 +274,59 @@ footer p{
         height: 350px;
     }
 
-    .welcome span{
+    .welcome span {
         display: block;
         font-weight: bold;
     }
 
-    
-    h1, .welcome span{
+
+    h1,
+    .welcome span {
         font-size: 2rem;
     }
 
-    .welcome .button{
+    .welcome .button {
         font-size: 16px;
     }
 
-    .chart{
+    .chart {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    .chart h3{
+    .chart h3 {
         margin-top: 40px;
     }
-    
-    .chart img{
-    margin-top: 30px;
+
+    .chart img {
+        margin-top: 30px;
     }
 
-    .chart p{
+    .chart p {
         font-size: 0.8rem;
     }
 
-    .chart__quality,.chart__ecology,.chart__fairtrade{
+    .chart__quality,
+    .chart__ecology,
+    .chart__fairtrade {
         width: 300px;
     }
 
-    .clubActus__club, .clubActus__actus {
+    .clubActus__club,
+    .clubActus__actus {
         max-width: 400px;
     }
 
-    .clubActus__club img, .clubActus__actus img {
+    .clubActus__club img,
+    .clubActus__actus img {
         object-position: right;
     }
 
 
 
 
-    .contact p{
+    .contact p {
         margin: 0px 250px;
     }
 
@@ -319,7 +336,7 @@ footer p{
         margin-top: 40px;
         margin-bottom: 60px;
     }
-    
+
     .contact ul li {
         margin-left: 20px;
     }
@@ -329,11 +346,11 @@ footer p{
 
 @media (min-width: 500px) {
 
-    header .logo{
+    header .logo {
         font-size: 2rem;
     }
 
-    nav li{
+    nav li {
         font-size: 1rem;
     }
 
@@ -344,13 +361,13 @@ footer p{
         height: 350px;
     }
 
-    .welcome span{
+    .welcome span {
         display: block;
         font-weight: bold;
         padding-top: 20px;
     }
 
-    .chart img{
+    .chart img {
         width: 10%;
     }
 }
@@ -360,14 +377,15 @@ footer p{
 
 @media (max-width: 350px) {
 
-body{
-    font-size: 0.6rem;
-}
+    body {
+        font-size: 0.6rem;
+    }
 
-.clubActus__club img, .clubActus__actus img {
-    min-width: 80px;
-    max-width: 150px;
-    object-position: 68%;
-}
+    .clubActus__club img,
+    .clubActus__actus img {
+        min-width: 80px;
+        max-width: 150px;
+        object-position: 68%;
+    }
 
 }
